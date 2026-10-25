@@ -1,6 +1,6 @@
-# UPAR Challenge 2027 — Track 3: Top-down 2D Human Pose Estimation
+# AIO-ISC: Domain-Aware Supervision and Decoupled Confidence Ranking for Surveillance Pose Estimation
 
-**Code submission for verification by the organisers.**
+Official source code and trained weights for **Team AIO-ISC** in the **UPAR Challenge 2027 — Track 3: Top-down 2D Human Pose Estimation**, held in conjunction with the **7th Real-World Surveillance (RWS) Workshop at WACV 2027**.
 The final submission reached **hidden AP 0.9065** (mean OKS AP 0.50:0.95, four hidden subsets, maxDets = 20) on Codabench, using a **pure ViTPose-H fine-tuned from the official single-dataset COCO checkpoint**.
 
 ## Final leaderboard result
