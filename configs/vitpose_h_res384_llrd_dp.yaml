@@ -1,0 +1,25 @@
+# ViTPose-H fine-tune on UPAR + PoseTrack18 + COCO mix (domain-balanced).
+model:
+  name: vitpose
+  variant: h
+  drop_path: 0.2
+data:
+  annotation_dir: /home/ubuntu/workspace/upar_official/mix_ann
+  image_root: data
+  input_size: [384, 288]
+  val_fraction: 0.10
+  sigma: 3.0
+training:
+  epochs: 2
+  batch_size: 32
+  workers: 7
+  seed: 2027
+  balanced: true
+  backbone_lr: 0.0001
+  layer_decay: 0.9
+  head_lr: 0.0005
+  weight_decay: 0.05
+  warmup_ratio: 0.05
+  grad_clip: 1.0
+  ema: true
+  ema_decay: 0.999

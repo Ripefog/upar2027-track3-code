@@ -1,0 +1,9 @@
+# First install compatible PyTorch for Blackwell via PyTorch CUDA 12.8 index.
+# pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+numpy>=1.24,<3
+Pillow>=10
+PyYAML>=6
+pytest>=8
+
+# TRAINING/EVALUATION only. Never imported by submission/run.py
+pycocotools>=2.0.8

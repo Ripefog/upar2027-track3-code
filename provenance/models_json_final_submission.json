@@ -1,0 +1,61 @@
+{
+  "models": [
+    {
+      "weights": "weights/model_0.pth",
+      "config": {
+        "model": {
+          "name": "vitpose",
+          "variant": "h"
+        },
+        "data": {
+          "annotation_dir": "/home/ubuntu/workspace/upar_official/mix_ann",
+          "image_root": "data",
+          "input_size": [
+            256,
+            192
+          ],
+          "val_fraction": 0.1,
+          "sigma": 2.0
+        },
+        "training": {
+          "epochs": 2,
+          "batch_size": 48,
+          "workers": 7,
+          "seed": 2027,
+          "balanced": true,
+          "backbone_lr": 5e-05,
+          "head_lr": 0.0005,
+          "weight_decay": 0.05,
+          "warmup_ratio": 0.05,
+          "grad_clip": 1.0,
+          "ema": true,
+          "ema_decay": 0.999
+        },
+        "experiment": {
+          "holdout_domain": null,
+          "train_all": false,
+          "pretrained": "/home/ubuntu/workspace/vitpose_ckpt/vitpose_h_cocoonly_native.pth",
+          "provenance": "local/provenance_vitpose_h_cocoonly.txt",
+          "source_topology": "coco",
+          "selection": "oks_ap",
+          "confidence_bias": 0.25,
+          "confidence_temperature": 0.15,
+          "mask_head_domains": [
+            "posetrack"
+          ]
+        }
+      },
+      "ensemble_weight": 1.0,
+      "flip_tta": true,
+      "flip_shift": 1,
+      "decoder": "dark",
+      "dark_kernel": 7,
+      "dark_sigma": 1.0,
+      "batch_size": 16,
+      "padding": 1.25,
+      "score_mode": "mean_peak",
+      "confidence_bias": 0.25,
+      "confidence_temperature": 0.15
+    }
+  ]
+}

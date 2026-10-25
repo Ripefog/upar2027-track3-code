@@ -1,0 +1,25 @@
+# --- data, weights, results: never commit ---
+data
+dist/
+outputs/
+weights/
+*.pth
+*.torchscript
+.venv/
+
+# --- caches ---
+__pycache__/
+.pytest_cache/
+
+# --- local working files: experiment history, paper drafts and figures stay off the repo ---
+docs/
+local/*
+!local/provenance_vitpose_h_cocoonly.txt
+
+# --- shared-GPU server automation scripts (waiter loops); reproduction is scripts/reproduce_submission.sh ---
+scripts/run_*.sh
+scripts/auto_pipeline.sh
+scripts/after_trainall.sh
+
+# patched configs from reproduce_submission.sh
+work/

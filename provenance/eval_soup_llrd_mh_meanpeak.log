@@ -1,0 +1,46 @@
+market: AP=0.9628, AP50=0.9898, AP_medium=0.9628471970335102, AP_large=None, s/image=0.102
+pa100k: AP=0.9567, AP50=0.9898, AP_medium=0.9374908066983302, AP_large=0.9623438493775324, s/image=0.105
+peta: AP=0.9611, AP50=0.9873, AP_medium=0.9539349875239543, AP_large=0.9689206565628644, s/image=0.107
+{
+  "domains": {
+    "market": {
+      "AP": 0.9628471970335102,
+      "AP50": 0.9897591251662481,
+      "AP75": 0.9893546369796078,
+      "AP_medium": 0.9628471970335102,
+      "AP_large": null,
+      "images": 1340,
+      "ground_truth_instances": 1340,
+      "predictions": 1340,
+      "inference_images": 1340,
+      "seconds_per_image": 0.10219711113743721
+    },
+    "pa100k": {
+      "AP": 0.9566783802748194,
+      "AP50": 0.9898486993403067,
+      "AP75": 0.979429939579343,
+      "AP_medium": 0.9374908066983302,
+      "AP_large": 0.9623438493775324,
+      "images": 1855,
+      "ground_truth_instances": 1855,
+      "predictions": 1855,
+      "inference_images": 1855,
+      "seconds_per_image": 0.10541622097443318
+    },
+    "peta": {
+      "AP": 0.9610777622234602,
+      "AP50": 0.9873323673764868,
+      "AP75": 0.9765758942011974,
+      "AP_medium": 0.9539349875239543,
+      "AP_large": 0.9689206565628644,
+      "images": 1046,
+      "ground_truth_instances": 1037,
+      "predictions": 1037,
+      "inference_images": 1037,
+      "seconds_per_image": 0.10681721096866914
+    }
+  },
+  "mean_SOURCE_domain_AP": 0.9602011131772633,
+  "selection": "image-level validation",
+  "note": "Not the four-hidden-subset ranking metric; COCOeval uses standard keypoint sigmas."
+}

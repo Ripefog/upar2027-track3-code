@@ -1,0 +1,35 @@
+data:
+  annotation_dir: /home/ubuntu/workspace/upar_official/mix_ann
+  image_root: data
+  input_size:
+  - 256
+  - 192
+  sigma: 2.0
+  val_fraction: 0.1
+experiment:
+  confidence_bias: 0.25
+  confidence_temperature: 0.15
+  holdout_domain: null
+  mask_head_domains:
+  - posetrack
+  pretrained: /home/ubuntu/workspace/vitpose_ckpt/vitpose_h_cocoonly_native.pth
+  provenance: local/provenance_vitpose_h_cocoonly.txt
+  selection: oks_ap
+  source_topology: coco
+  train_all: false
+model:
+  name: vitpose
+  variant: h
+training:
+  backbone_lr: 5.0e-05
+  balanced: true
+  batch_size: 48
+  ema: true
+  ema_decay: 0.999
+  epochs: 2
+  grad_clip: 1.0
+  head_lr: 0.0005
+  seed: 2027
+  warmup_ratio: 0.05
+  weight_decay: 0.05
+  workers: 7

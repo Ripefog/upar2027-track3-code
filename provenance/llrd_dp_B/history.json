@@ -1,0 +1,206 @@
+[
+  {
+    "epoch": 1,
+    "train_loss": 0.0006698679203046224,
+    "val": {
+      "overall": {
+        "pck_010": 0.9726850408893243,
+        "pck_020": 0.989815515680425,
+        "mean_normalized_error": 0.025619477033615112,
+        "valid_joints": 336885
+      },
+      "domains": {
+        "market": {
+          "pck_010": 0.9919770152328292,
+          "pck_020": 0.9966932292513688,
+          "mean_normalized_error": 0.01766105741262436,
+          "valid_joints": 18447
+        },
+        "pa100k": {
+          "pck_010": 0.9888007273328374,
+          "pck_020": 0.9961567071658814,
+          "mean_normalized_error": 0.017638981342315674,
+          "valid_joints": 24198
+        },
+        "peta": {
+          "pck_010": 0.9859565807327001,
+          "pck_020": 0.9951153324287653,
+          "mean_normalized_error": 0.015089769847691059,
+          "valid_joints": 14740
+        },
+        "posetrack": {
+          "pck_010": 0.968858261315457,
+          "pck_020": 0.9879185061970809,
+          "mean_normalized_error": 0.02763643115758896,
+          "valid_joints": 159914
+        },
+        "coco": {
+          "pck_010": 0.9699295904202833,
+          "pck_020": 0.9893549412138545,
+          "mean_normalized_error": 0.027062704786658287,
+          "valid_joints": 119586
+        }
+      },
+      "selection": "oks_ap",
+      "oks_ap": {
+        "domains": {
+          "coco": {
+            "AP": 0.8648447987617862,
+            "AP50": 0.9777462961033598,
+            "AP75": 0.9313804326801449,
+            "AP_medium": 0.8369824510983911,
+            "AP_large": 0.8994845397061646,
+            "images": 5009,
+            "ground_truth_instances": 21162,
+            "predictions": 11925
+          },
+          "market": {
+            "AP": 0.9537289196834577,
+            "AP50": 0.989966011526526,
+            "AP75": 0.9893959543914642,
+            "AP_medium": 0.9537289196834577,
+            "AP_large": null,
+            "images": 1340,
+            "ground_truth_instances": 1340,
+            "predictions": 1340
+          },
+          "pa100k": {
+            "AP": 0.946919719318778,
+            "AP50": 0.9897970982102869,
+            "AP75": 0.978453091079815,
+            "AP_medium": 0.9233365344763894,
+            "AP_large": 0.9542261881925405,
+            "images": 1855,
+            "ground_truth_instances": 1855,
+            "predictions": 1855
+          },
+          "peta": {
+            "AP": 0.9534790972528263,
+            "AP50": 0.9871417960686409,
+            "AP75": 0.97533641221889,
+            "AP_medium": 0.9508939666936362,
+            "AP_large": 0.9604501707090598,
+            "images": 1037,
+            "ground_truth_instances": 1037,
+            "predictions": 1037
+          },
+          "posetrack": {
+            "AP": 0.8136820110804234,
+            "AP50": 0.9767976305941737,
+            "AP75": 0.9094921661690654,
+            "AP_medium": 0.6226768875981568,
+            "AP_large": 0.8257207422842145,
+            "images": 2674,
+            "ground_truth_instances": 14158,
+            "predictions": 13120
+          }
+        },
+        "mean_source_domain_ap": 0.9065309092194545,
+        "min_source_domain_ap": 0.8136820110804234
+      }
+    },
+    "seconds": 4262.3
+  },
+  {
+    "epoch": 2,
+    "train_loss": 0.0005337327915518787,
+    "val": {
+      "overall": {
+        "pck_010": 0.974878667794648,
+        "pck_020": 0.9907238375113169,
+        "mean_normalized_error": 0.02478747069835663,
+        "valid_joints": 336885
+      },
+      "domains": {
+        "market": {
+          "pck_010": 0.9924648994416436,
+          "pck_020": 0.9969100666775086,
+          "mean_normalized_error": 0.01742955483496189,
+          "valid_joints": 18447
+        },
+        "pa100k": {
+          "pck_010": 0.9894619390032234,
+          "pck_020": 0.9960327299776841,
+          "mean_normalized_error": 0.017527902498841286,
+          "valid_joints": 24198
+        },
+        "peta": {
+          "pck_010": 0.9860922659430122,
+          "pck_020": 0.9949796472184532,
+          "mean_normalized_error": 0.014849452301859856,
+          "valid_joints": 14740
+        },
+        "posetrack": {
+          "pck_010": 0.9728666658328852,
+          "pck_020": 0.9894880998536714,
+          "mean_normalized_error": 0.026156725361943245,
+          "valid_joints": 159914
+        },
+        "coco": {
+          "pck_010": 0.9705233054036426,
+          "pck_020": 0.9898232234542504,
+          "mean_normalized_error": 0.026785386726260185,
+          "valid_joints": 119586
+        }
+      },
+      "selection": "oks_ap",
+      "oks_ap": {
+        "domains": {
+          "coco": {
+            "AP": 0.866771476859078,
+            "AP50": 0.9777123465754649,
+            "AP75": 0.9314657407911097,
+            "AP_medium": 0.8410172728234607,
+            "AP_large": 0.8995336338078476,
+            "images": 5009,
+            "ground_truth_instances": 21162,
+            "predictions": 11925
+          },
+          "market": {
+            "AP": 0.9556548384296473,
+            "AP50": 0.989966011526526,
+            "AP75": 0.989441950121263,
+            "AP_medium": 0.9556548384296473,
+            "AP_large": null,
+            "images": 1340,
+            "ground_truth_instances": 1340,
+            "predictions": 1340
+          },
+          "pa100k": {
+            "AP": 0.9479962786979353,
+            "AP50": 0.9896923880353063,
+            "AP75": 0.9785816906147707,
+            "AP_medium": 0.9243373310976932,
+            "AP_large": 0.9535551004329044,
+            "images": 1855,
+            "ground_truth_instances": 1855,
+            "predictions": 1855
+          },
+          "peta": {
+            "AP": 0.9574148510436692,
+            "AP50": 0.9873416183610334,
+            "AP75": 0.97593860140322,
+            "AP_medium": 0.9480881985908912,
+            "AP_large": 0.9660503566119005,
+            "images": 1037,
+            "ground_truth_instances": 1037,
+            "predictions": 1037
+          },
+          "posetrack": {
+            "AP": 0.8232460311824132,
+            "AP50": 0.9774624810931862,
+            "AP75": 0.9213091975334017,
+            "AP_medium": 0.6441476723941123,
+            "AP_large": 0.8370102239766479,
+            "images": 2674,
+            "ground_truth_instances": 14158,
+            "predictions": 13120
+          }
+        },
+        "mean_source_domain_ap": 0.9102166952425487,
+        "min_source_domain_ap": 0.8232460311824132
+      }
+    },
+    "seconds": 5291.3
+  }
+]

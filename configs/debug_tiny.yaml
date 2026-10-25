@@ -1,0 +1,21 @@
+model:
+  name: vitpose
+  variant: tiny
+data:
+  annotation_dir: data/annotations/specialization
+  image_root: data
+  input_size: [64, 48]
+  val_fraction: 0.25
+  sigma: 1.5
+training:
+  epochs: 1
+  batch_size: 2
+  workers: 0
+  seed: 2027
+  balanced: true
+  backbone_lr: 0.00001
+  head_lr: 0.0001
+  weight_decay: 0.05
+  warmup_ratio: 0.05
+  grad_clip: 1.0
+  ema: false

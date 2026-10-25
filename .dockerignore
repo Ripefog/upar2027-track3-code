@@ -1,0 +1,13 @@
+.git
+.venv
+.pytest_cache
+__pycache__
+data
+dist
+outputs
+docs
+work
+local/*
+!local/provenance_vitpose_h_cocoonly.txt
+*.zip
+*.torchscript
