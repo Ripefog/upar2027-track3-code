@@ -3,7 +3,7 @@ set -euo pipefail
 python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
-python -m pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+python -m pip install torch==2.13.0 torchvision --index-url https://download.pytorch.org/whl/cu130
 python -m pip install -r requirements_train.txt
 python - <<'PY'
 import torch

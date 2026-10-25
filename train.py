@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Single-GPU 96 GB Blackwell training. Local PyTorch >=2.7 with cu128 recommended."""
+"""Single-GPU 96 GB Blackwell training. Training used PyTorch 2.13.0 + cu130 (Blackwell)."""
 from __future__ import annotations
 import argparse
 import copy

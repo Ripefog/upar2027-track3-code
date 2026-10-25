@@ -10,4 +10,4 @@ Compliance: this is the only external initialisation of the submitted system; no
 model was used at any stage and no additional pretraining was performed. Hidden test data
 is never used for training, tuning or selection.
 092b137f18fb92ec0c569dd9d003468e4a31fbd9248fe4523cd9f10a15ad17a6  vitpose-h.pth (official download)
-189c1d49aa21ec6e99f455d4379e89ee8018de5f0b39912e492be93fb64906d9  vitpose_h_cocoonly_native.pth (converted)
+189c1d49aa21ec6e99f455d4379e89ee8018de1f0b39912e492be93fb64906d9  vitpose_h_cocoonly_native.pth (converted)

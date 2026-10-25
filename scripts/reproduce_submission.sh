@@ -5,7 +5,7 @@
 # Hardware used: 1x NVIDIA RTX PRO 6000 Blackwell (96 GB); both trainings together ~6 h.
 set -euo pipefail
 
-PY=${PY:-python}        # training env: torch>=2.8 + cu128/cu130, see requirements_train.txt / Dockerfile
+PY=${PY:-python}        # training env: torch 2.13.0 + cu130, see requirements_train.txt / Dockerfile
 ANN=${ANN:?Set ANN to the UPAR source annotation dir containing train_<domain>.json for market/pa100k/peta/posetrack/coco}
 IMG=${IMG:-data}        # image root of the source datasets
 CKPT=${CKPT:-weights/vitpose_h_cocoonly_native.pth}

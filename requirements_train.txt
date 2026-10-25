@@ -1,5 +1,5 @@
-# First install compatible PyTorch for Blackwell via PyTorch CUDA 12.8 index.
-# pip install torch==2.8.0 torchvision==0.23.0 --index-url https://download.pytorch.org/whl/cu128
+# First install compatible PyTorch for Blackwell via PyTorch CUDA 13.0 index.
+# pip install torch==2.13.0 torchvision --index-url https://download.pytorch.org/whl/cu130
 numpy>=1.24,<3
 Pillow>=10
 PyYAML>=6

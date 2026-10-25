@@ -101,7 +101,7 @@ The script patches the annotation dir / image root into the configs automaticall
 
 ## Compliance notes
 
-- Initialisation is the official COCO-only ViTPose-H release; no additional pretraining was performed by us. sha256 of the downloaded official checkpoint: `092b137f18fb92ec0c569dd9d003468e4a31fbd9248fe4523cd9f10a15ad17a6`; of the converted native checkpoint used by `train.py`: `189c1d49aa21ec6e99f455d4379e89ee8018de5f0b39912e492be93fb64906d9`.
+- Initialisation is the official COCO-only ViTPose-H release; no additional pretraining was performed by us. sha256 of the downloaded official checkpoint: `092b137f18fb92ec0c569dd9d003468e4a31fbd9248fe4523cd9f10a15ad17a6`; of the converted native checkpoint used by `train.py`: `189c1d49aa21ec6e99f455d4379e89ee8018de1f0b39912e492be93fb64906d9`.
 - The hidden test data was never used for training, pseudo-labelling, tuning or model selection.
 - `tests/test_rules_2027.py` re-checks the repo's own compliance assumptions.
 
